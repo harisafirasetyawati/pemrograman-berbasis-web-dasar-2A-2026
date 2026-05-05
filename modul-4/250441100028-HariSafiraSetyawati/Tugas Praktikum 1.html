@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+
+<!-- Tailwind CDN -->
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+    darkMode: 'class',
+}
+</script>
+
+</head>
+
+<body class="flex h-screen bg-white dark:bg-gray-900 transition duration-300">
+
+<!-- TOGGLE BUTTON -->
+
+<button id="toggleTheme"
+ class="absolute top-5 right-5 p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-xl">
+🌙 </button>
+
+<!-- LEFT SIDE -->
+
+<div class="w-1/2 bg-[#637dc6] text-white flex flex-col justify-center p-20">
+
+<h1 class="text-5xl font-bold leading-tight max-w-xl">
+    Hello Prospective<br>Students
+</h1>
+
+<img src="Gambar/gambar_login page.png" class="w-[500px] my-10">
+
+<p class="text-lg max-w-md leading-relaxed">
+    Unlock your professional potential. Learn from industry leaders
+    and stay ahead of the competition.
+</p>
+
+</div>
+
+<!-- RIGHT SIDE -->
+
+<div class="w-1/2 bg-[#e7ecf4] dark:bg-gray-800 flex justify-center items-center transition duration-300">
+
+<div class="w-[350px] text-center text-black dark:text-white">
+
+    <h2 class="text-xl font-semibold">LOGIN PAGE</h2>
+    <p class="text-xs text-gray-500 dark:text-gray-300 mb-5">
+        Masukkan Username dan Password Anda
+    </p>
+
+    <input id="email" type="text"
+        placeholder="Email Address"
+        class="w-full p-3 my-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-center shadow">
+
+    <input id="password" type="password"
+        placeholder="Password"
+        class="w-full p-3 my-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-center shadow">
+
+    <button onclick="login()"
+        class="w-full p-3 mt-2 bg-blue-700 text-white font-semibold rounded-lg shadow">
+        Login
+    </button>
+
+    <div class="my-5 text-xs text-gray-500 dark:text-gray-300 relative">
+        <span class="px-2 bg-[#e7ecf4] dark:bg-gray-800 relative z-10">Or Login With</span>
+        <div class="absolute top-1/2 left-0 w-full h-px bg-gray-300 dark:bg-gray-600 -z-10"></div>
+    </div>
+
+    <button class="w-full p-3 bg-white dark:bg-gray-700 rounded-lg shadow">
+        Sign in with Account Google
+    </button>
+
+    <p id="message" class="mt-3 text-sm"></p>
+
+</div>
+
+</div>
+
+<script>
+// LOGIN FUNCTION
+function login() {
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let msg = document.getElementById("message");
+
+    msg.innerHTML = "";
+    msg.className = "";
+
+    if (email === "" || password === "") {
+        msg.innerHTML = "Email dan Password wajib diisi!";
+        msg.className = "text-red-500 text-sm mt-2";
+        return;
+    }
+
+    if (password.length < 6) {
+        msg.innerHTML = "Password minimal 6 karakter!";
+        msg.className = "text-red-500 text-sm mt-2";
+        return;
+    }
+
+    msg.innerHTML = "Login berhasil!";
+    msg.className = "text-green-500 text-sm mt-2";
+}
+
+// DARK MODE SCRIPT
+const btn = document.getElementById("toggleTheme");
+const html = document.documentElement;
+
+function applyTheme(theme) {
+    if (theme === "dark") {
+        html.classList.add("dark");
+        btn.textContent = "☀️";
+    } else {
+        html.classList.remove("dark");
+        btn.textContent = "🌙";
+    }
+}
+
+// Load theme
+const savedTheme = localStorage.getItem("theme") || "light";
+applyTheme(savedTheme);
+
+// Toggle
+btn.addEventListener("click", () => {
+    const currentTheme = html.classList.contains("dark") ? "dark" : "light";
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+    localStorage.setItem("theme", newTheme);
+    applyTheme(newTheme);
+});
+</script>
+
+</body>
+</html>

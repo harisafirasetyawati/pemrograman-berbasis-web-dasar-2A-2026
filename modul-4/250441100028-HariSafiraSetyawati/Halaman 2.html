@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+</head>
+
+<body class="bg-[#e9edf5] text-gray-800 dark:bg-gray-900 dark:text-white transition duration-300">
+
+    <!-- NAVBAR -->
+    <nav class="flex justify-between items-center px-10 py-5 bg-[#f5f5f5] dark:bg-gray-800 shadow-md gap-4">
+        <div class="flex gap-6 text-sm font-medium">
+            <a href="#" class="hover:text-blue-600 transition">Home</a>
+            <a href="#" class="hover:text-blue-600 transition">Courses</a>
+            <a href="#" class="hover:text-blue-600 transition">Teachers</a>
+            <a href="#" class="hover:text-blue-600 transition">Pages</a>
+            <a href="#" class="hover:text-blue-600 transition">Blog</a>
+            <a href="#" class="hover:text-blue-600 transition">Contact</a>
+        </div>
+        
+        <div class="flex gap-3">
+            <button id="toggleTheme" 
+                    class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition shadow-md hover:shadow-lg hover:scale-105"
+                    aria-label="Toggle dark mode">
+                🌙
+            </button>
+            <button id="contactBtn"
+                    class="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-orange-600 transition shadow-md hover:shadow-lg hover:scale-105 font-medium">
+                Contact Us
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="flex flex-col md:flex-row items-center justify-between px-10 py-16 gap-10">
+        <div class="md:w-1/2 space-y-4">
+            <p class="text-sm uppercase tracking-wide">E-Learning Platform</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-700 dark:text-blue-400 leading-tight">
+                Online Course Education
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100">
+                Feels Like Real Classroom
+            </h2>
+            <p class="text-gray-600 dark:text-gray-300 text-lg">
+                Get Certificate • Gain Job Ready Skill • Great Life
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button class="bg-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition">
+                    Get Started
+                </button>
+                <button class="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition">
+                    Get Course
+                </button>
+            </div>
+        </div>
+        <img src="Gambar/gambar_orang.png" alt="Student learning online" class="max-w-[420px] w-full">
+    </section>
+
+    <!-- ABOUT -->
+    <section class="flex flex-col lg:flex-row items-center justify-between px-10 py-16 bg-[#5f76b7] dark:bg-gray-800 text-white gap-10">
+        <img src="Gambar/gambar_course.png" alt="Online courses illustration" class="max-w-[350px] w-full order-2 lg:order-1">
+        <div class="md:w-1/2 space-y-4 text-center lg:text-left">
+            <p class="text-sm uppercase tracking-wide">Get to Know About Us</p>
+            <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+                Transform your future with skills that matter.
+            </h2>
+            <p class="text-gray-200 text-lg">
+                Build in-demand skills and advance your career.
+            </p>
+            <button class="mt-5 bg-orange-500 px-8 py-3 rounded-lg font-medium hover:bg-orange-600 transition inline-flex items-center gap-2">
+                About More →
+            </button>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="px-10 py-16 bg-white dark:bg-gray-800">
+        <div class="flex flex-wrap justify-center gap-6 text-blue-700 dark:text-blue-300 text-sm md:text-base font-semibold max-w-4xl mx-auto">
+            <div class="flex items-center gap-3 p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
+                <img src="Gambar/icon_folder.svg" alt="Courses icon" class="w-6 h-6"> 20k+ Online Courses
+            </div>
+            <div class="flex items-center gap-3 p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
+                <img src="Gambar/icon_jam.svg" alt="Access icon" class="w-6 h-6"> Lifetime Access
+            </div>
+            <div class="flex items-center gap-3 p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
+                <img src="Gambar/icon_uang.svg" alt="Value icon" class="w-6 h-6"> Value For Money
+            </div>
+            <div class="flex items-center gap-3 p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
+                <img src="Gambar/icon_headphone.svg" alt="Support icon" class="w-6 h-6"> Lifetime Support
+            </div>
+            <div class="flex items-center gap-3 p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
+                <img src="Gambar/people_icon.svg" alt="Community icon" class="w-6 h-6"> Community Support
+            </div>
+            <div class="flex items-center gap-3 p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl">
+                <img src="Gambar/icon_download.svg" alt="Download icon" class="w-6 h-6"> Free Download Course
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="px-10 py-16 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">Popular Courses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <img src="Gambar/thumbnail-1.png" alt="Learn Figma course" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg mb-2">Learn Figma</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">Master UI/UX design tools</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <img src="Gambar/thumbnail-2.png" alt="Python Fundamental course" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg mb-2">Python Fundamental</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">Build programming basics</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <img src="Gambar/thumbnail-3.png" alt="Digital Marketing course" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg mb-2">Digital Marketing</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">Grow online presence</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <img src="Gambar/thumbnail-4.png" alt="Graphic Design course" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg mb-2">Graphic Design</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">Create stunning visuals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#5f76b7] dark:bg-gray-800 text-white px-10 py-12 text-center">
+        <p class="text-xl font-semibold">Dive Into our Online Courses and Ignite Your Learning</p>
+    </footer>
+
+    <!-- DARK MODE -->
+    <script>
+        const btn = document.getElementById("toggleTheme");
+        const html = document.documentElement;
+
+        function applyTheme(theme) {
+            if (theme === "dark") {
+                html.classList.add("dark");
+                btn.textContent = "☀️";
+                btn.setAttribute("aria-label", "Switch to light mode");
+            } else {
+                html.classList.remove("dark");
+                btn.textContent = "🌙";
+                btn.setAttribute("aria-label", "Switch to dark mode");
+            }
+        }
+
+        // Memuat tema yang tersimpan
+        const savedTheme = localStorage.getItem("theme") || "light";
+        applyTheme(savedTheme);
+
+        btn.addEventListener("click", () => {
+            const currentTheme = html.classList.contains("dark") ? "dark" : "light";
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            localStorage.setItem("theme", newTheme);
+            applyTheme(newTheme);
+        });
+    </script>
+</body>
+</html>
