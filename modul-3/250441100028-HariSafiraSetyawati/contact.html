@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#faf9f7]">
+
+<!-- Navbar -->
+<nav class="bg-white shadow p-4 flex justify-between">
+  <h1 class="text-[#8b7d6b] font-bold text-xl">True To Skin</h1>
+  <div class="space-x-4 text-gray-700">
+    <a href="Tugas Praktikum Modul 3 No 2.html">Home</a>
+    <a href="product.html">Product</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="py-16 text-center">
+  <h2 class="text-3xl font-bold text-[#8b7d6b]">Our Contact</h2>
+  <p class="mt-4 text-gray-700">Email: info@truetoskin.com</p>
+  <p class="text-gray-700">WhatsApp: 08123456789</p>
+
+<!-- Form -->
+<section class="py-16 text-center">
+  <h2 class="text-3xl font-bold text-[#8b7d6b]">Pemesanan Produk</h2>
+
+  <form class="mt-6 max-w-md mx-auto px-4 text-left space-y-3">
+
+    <!-- Nama -->
+    <input type="text" id="nama" placeholder="Nama Lengkap"
+      class="w-full p-2 border rounded">
+
+    <!-- No Telepon -->
+    <input type="text" id="telepon" placeholder="No. Telepon"
+      class="w-full p-2 border rounded">
+
+    <!-- Alamat -->
+    <textarea id="alamat" placeholder="Alamat Lengkap"
+      class="w-full p-2 border rounded"></textarea>
+
+    <!-- Pilih Produk -->
+    <select id="produk" class="w-full p-2 border rounded">
+      <option value="">Pilih Produk</option>
+      <option>Facial Wash</option>
+      <option>Serum</option>
+      <option>Sunscreen</option>
+      <option>Moisturizer</option>
+      <option>Toner</option>
+      <option>Cleansing Balm</option>
+    </select>
+
+    <!-- Jumlah -->
+    <input type="number" id="jumlah" placeholder="Jumlah Beli"
+      class="w-full p-2 border rounded">
+
+    <!-- Pesan -->
+    <textarea id="pesan"
+      class="w-full p-2 border rounded"
+      placeholder="Tambahkan pesan (opsional)"></textarea>
+
+    <!-- Button -->
+    <button type="button" onclick="buatPesanan()"
+      class="bg-[#8b7d6b] text-white px-4 py-2 rounded w-full">
+      Buat Pesanan
+    </button>
+
+  </form>
+</section>
+
+</body>
+</html>
