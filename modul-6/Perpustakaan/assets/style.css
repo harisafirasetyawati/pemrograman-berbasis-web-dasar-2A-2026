@@ -1,0 +1,253 @@
+body{
+    background: url('Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CARD */
+.card{
+    border: none;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(255,105,180,0.18);
+    overflow: hidden;
+}
+
+/* TITLE */
+h1,h2,h3{
+    color: #ff1493;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(255,20,147,0.15);
+}
+
+/* FORM */
+.form-control,
+.form-select{
+    border-radius: 18px;
+    border: 2px solid #ffb6d9;
+    padding: 14px;
+    font-size: 15px;
+    transition: 0.3s;
+    background: rgba(255,255,255,0.85);
+    color: #d63384;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color: #ff1493;
+    box-shadow: 0 0 10px rgba(255,20,147,0.2);
+    background: white;
+}
+
+/* PLACEHOLDER */
+.form-control::placeholder{
+    color: #e08bb3;
+}
+
+/* LABEL */
+label{
+    color: #ff1493;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* BUTTON */
+.btn{
+    border: none;
+    border-radius: 18px;
+    padding: 12px 22px;
+    font-weight: 600;
+    transition: 0.3s;
+    color: white;
+}
+
+.btn:hover{
+    transform: translateY(-2px) scale(1.02);
+}
+
+/* BUTTON COLORS */
+.btn-primary{
+    background: linear-gradient(to right,#ff8fc7,#ff4fa3);
+    color: white;
+}
+
+.btn-danger{
+    background: linear-gradient(to right,#ff7eb3,#ff4f8b);
+    color: white;
+}
+
+.btn-warning{
+    background: linear-gradient(to right,#ffb6d9,#ff8fc7);
+    color: white;
+}
+
+.btn-success{
+    background: linear-gradient(to right,#ff8fc7,#ff4fa3);
+    color: white;
+}
+
+/* TABLE */
+table{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: transparent;
+}
+
+/* HEADER TABLE */
+table th{
+    background: linear-gradient(to right,#ff8fc7,#ff69b4);
+    color: white !important;
+    text-align: center;
+    padding: 18px !important;
+    font-size: 16px;
+    font-weight: 600;
+    border: none !important;
+}
+
+/* HEADER ROUNDED */
+table th:first-child{
+    border-top-left-radius: 20px;
+}
+
+table th:last-child{
+    border-top-right-radius: 20px;
+}
+
+/* BODY TABLE */
+table td{
+    background: rgba(255,220,235,0.9);
+    color: #ff4f9a !important;
+    text-align: center;
+    padding: 16px !important;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+/* HOVER */
+.table-hover tbody tr:hover td{
+    background: rgba(255,190,220,0.9);
+    color: #ff1493 !important;
+    transition: 0.3s;
+}
+
+/* ROUNDING BAWAH */
+table tr:last-child td:first-child{
+    border-bottom-left-radius: 20px;
+}
+
+table tr:last-child td:last-child{
+    border-bottom-right-radius: 20px;
+}
+
+/* BODY TABLE */
+table td{
+    background: rgba(255,182,217,0.65);
+    color: white;
+    text-align: center;
+    padding: 16px !important;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+/* ROW HOVER */
+.table-hover tbody tr:hover td{
+    background: rgba(255,160,210,0.85);
+    transition: 0.3s;
+}
+
+/* ROUNDING BAGIAN BAWAH */
+table tr:last-child td:first-child{
+    border-bottom-left-radius: 20px;
+}
+
+table tr:last-child td:last-child{
+    border-bottom-right-radius: 20px;
+}
+
+/* BODY TABLE */
+table td{
+    background: rgba(255,182,217,0.45);
+    color: white;
+    text-align: center;
+    padding: 16px !important;
+    border-color: rgb(255, 255, 255) !important;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+/* HOVER */
+.table-hover tbody tr:hover td{
+    background: rgba(255,192,223,0.75);
+    transition: 0.3s;
+}
+
+/* BUTTON EDIT */
+.btn-warning{
+    border-radius: 12px;
+    padding: 7px 12px;
+    font-size: 13px;
+    box-shadow: 0 4px 10px rgba(255,105,180,0.2);
+}
+
+/* BUTTON DELETE */
+.btn-danger{
+    border-radius: 12px;
+    padding: 7px 12px;
+    font-size: 13px;
+    box-shadow: 0 4px 10px rgba(255,105,180,0.2);
+}
+
+/* BUTTON HOVER */
+.btn-warning:hover,
+.btn-danger:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* LOGIN BOX */
+.login-box{
+    max-width: 500px;
+    margin: auto;
+}
+
+/* SHADOW */
+.shadow{
+    box-shadow: 0 8px 20px rgba(255,105,180,0.15) !important;
+}
+
+/* LINK */
+a{
+    text-decoration: none;
+}
+
+/* BADGE */
+.badge{
+    border-radius: 12px;
+    padding: 10px 14px;
+    background: #ff8fc7;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    h2{
+        font-size: 28px;
+    }
+
+    table{
+        font-size: 13px;
+    }
+
+}
